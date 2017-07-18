@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+      >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@mipmap/titlebar"
+            android:layout_marginBottom="20dp">
+
+            <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                android:id="@+id/txt_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="SETTINGS"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@color/light_grey1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+                <com.jlouistechnology.magnawave.Fonts.TextView_bld
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0.7"
+                    android:textSize="14sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/dark_blue"
+                    android:text="ACCOUNT"
+                    />
+                <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+                    android:id="@+id/txt_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0.2"
+                    android:textSize="12sp"
+                    android:gravity="left"
+                    android:textAllCaps="true"
+                    android:textColor="@color/dark_blue"
+                    android:text="PATZIEMER@GMAIL.COM"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"></View>
+            <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+                android:id="@+id/txt_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/light_grey"
+                android:text="LOG OUT"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:background="@color/light_grey1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="14sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/dark_blue"
+                    android:text="CONNECTED TO JAZZRO"
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/check"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"></View>
+            <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/light_grey"
+                android:text="DISCONNECT"
+                />
+        </LinearLayout>
+
+        <com.jlouistechnology.magnawave.Fonts.TextView_bld
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:gravity="center_vertical|left"
+            android:background="@color/light_grey1"
+            android:textColor="@color/dark_blue"
+            android:text="Pat Ziemer"
+            android:visibility="gone"
+            android:padding="15dp"
+            />
+        <com.jlouistechnology.magnawave.Fonts.TextView_bld
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:gravity="center_vertical|left"
+            android:background="@color/light_grey1"
+            android:textColor="@color/dark_blue"
+            android:text="123 Main Street"
+            android:visibility="gone"
+            android:padding="15dp"
+            />
+
+        <com.jlouistechnology.magnawave.Fonts.TextView_bld
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:gravity="center_vertical|left"
+            android:background="@color/light_grey1"
+            android:textColor="@color/dark_blue"
+            android:text="Louisville, KY 40207"
+            android:visibility="gone"
+            android:padding="15dp"
+            />
+
+        <com.jlouistechnology.magnawave.Fonts.TextView_bld
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:gravity="center_vertical|left"
+            android:background="@color/light_grey1"
+            android:textColor="@color/dark_blue"
+            android:text="502-555-1234"
+            android:visibility="gone"
+            android:padding="15dp"
+            />
+
+        <com.jlouistechnology.magnawave.Fonts.TextView_bld
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:gravity="center_vertical|left"
+            android:background="@color/light_grey1"
+            android:textColor="@color/dark_blue"
+            android:text="ziemer@example.com"
+            android:padding="15dp"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</layout>

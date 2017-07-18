@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+      >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent">
+            <ImageView
+                android:id="@+id/txt_menu"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/heading"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@mipmap/titlebar">
+
+            <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                android:id="@+id/txt_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="LOGIN"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+          >
+
+            <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:paddingTop="5dp"
+                android:textSize="12sp"
+                android:layout_gravity="left|center_vertical"
+                android:textColor="@color/grey"
+                android:visibility="invisible"
+                />
+            <com.jlouistechnology.magnawave.Fonts.Edittext_Regular
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:imeOptions="actionNext"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/dark_blue"
+                android:textSize="14sp"
+                android:visibility="visible"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/grey"
+                android:background="@null"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:background="@color/dark_blue"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+                android:id="@+id/txt_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:paddingTop="5dp"
+                android:textSize="12sp"
+                android:layout_gravity="left|center_vertical"
+                android:textColor="@color/grey"
+                android:visibility="invisible"
+                />
+            <com.jlouistechnology.magnawave.Fonts.Edittext_Regular
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:imeOptions="actionDone"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/dark_blue"
+                android:textSize="14sp"
+                android:visibility="visible"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/grey"
+                android:background="@null"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:background="@color/dark_blue"
+                />
+
+        </LinearLayout>
+
+        <com.jlouistechnology.magnawave.Fonts.TextView_bld
+            android:id="@+id/txtforgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="right|center_vertical"
+            android:textSize="14sp"
+            android:layout_marginRight="15dp"
+            android:text="Forgot Password ?"
+            android:textColor="@color/blue" />
+
+        <com.jlouistechnology.magnawave.Fonts.TextView_bld
+            android:id="@+id/txtlogin"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_blue_curve" />
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</layout>

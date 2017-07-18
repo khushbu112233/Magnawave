@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_curve">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_curve">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent">
+
+            <ImageView
+                android:id="@+id/txt_menu"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+
+                android:src="@mipmap/heading"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@color/colorAccent"
+            android:text="Add Pet Details"
+            android:visibility="visible"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/txtfollow1"
+            android:background="#F7F7F7"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff">
+            <ImageView android:id="@+id/img_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/camera_blue"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"/>
+            <com.jlouistechnology.magnawave.utils.CircularImageView android:id="@+id/img_animal_part"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle_border"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+                    android:id="@+id/txt_organ_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/organ_name"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="left|center_vertical"
+                    android:textColor="@color/grey"
+                    android:visibility="invisible"
+                    />
+                <com.jlouistechnology.magnawave.Fonts.Edittext_Regular
+                    android:id="@+id/edt_organ_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:imeOptions="actionNext"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    android:hint="@string/organ_name"
+                    android:singleLine="true"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/grey"
+                    android:background="@null"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible"
+                    android:background="@color/colorAccent"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+                    android:id="@+id/txt_organ_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/organ_description"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="left|center_vertical"
+                    android:textColor="@color/grey"
+                    android:visibility="invisible"
+                    />
+                <com.jlouistechnology.magnawave.Fonts.Edittext_Regular
+                    android:id="@+id/edt_organ_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:imeOptions="actionDone"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    android:hint="@string/organ_description"
+                    android:maxLines="4"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/grey"
+                    android:background="@null"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible"
+                    android:background="@color/colorAccent"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+
+                android:layout_marginTop="40dp">
+            <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                android:id="@+id/txtadd"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:text="Add"
+                android:textColor="@color/blue"
+                android:background="@color/colorAccent" />
+                <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                    android:id="@+id/txtcancel"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue"
+                    android:text="Cancel"
+                    android:background="@color/colorAccent" />
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout></ScrollView>
+    </LinearLayout>
+</RelativeLayout>
+

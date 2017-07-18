@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/splash"
+        >
+
+        <LinearLayout
+            android:id="@+id/login_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:layout_marginBottom="150dp"
+            android:weightSum="1"
+            >
+
+            <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                android:id="@+id/txtSignUp"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.50"
+                android:background="@drawable/btn_blue_curve"
+                android:gravity="center"
+                android:text="SIGN UP"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                android:id="@+id/txtlogin"
+                android:layout_width="0dp"
+                android:layout_weight="0.50"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="LOGIN"
+                android:textColor="#ffffff"
+                android:background="@drawable/btn_blue_curve" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

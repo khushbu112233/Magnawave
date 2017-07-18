@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+      >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@mipmap/titlebar">
+            <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+
+            <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                android:id="@+id/txt_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EDIT"
+                android:gravity="left"
+                android:textSize="12sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="6dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left"
+                android:textColor="@color/blue"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:id="@+id/img_client"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/circle_border"
+                android:layout_marginTop="6dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_client"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+                <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                    android:id="@+id/txt_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:gravity="left"
+                    android:textColor="@color/blue"
+
+                    />
+                <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                    android:id="@+id/txt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:gravity="left"
+                    android:textColor="@color/blue"
+
+                    />
+
+                <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                    android:id="@+id/txt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:gravity="left"
+                    android:textColor="@color/blue"
+
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View android:id="@+id/view_top"
+                android:layout_width="1.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:visibility="gone"
+                android:background="@color/light_grey"
+                android:layout_marginBottom="10dp"
+                ></View>
+
+        <ListView android:id="@+id/client_info"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:dividerHeight="0dp"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="10dp"
+            android:divider="@null"></ListView>
+
+            <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                android:id="@+id/tv_time_info_new"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:background="@color/light_grey1"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/light_grey"
+                android:text="Today"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

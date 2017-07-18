@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp"
+    android:background="#ffffff">
+    <!--Bottom View For Right to Left-->
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <com.jlouistechnology.magnawave.Fonts.TextView_bld
+            android:id="@+id/txtdelete"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="#ffffff"
+            android:scaleType="fitXY"
+            android:visibility="visible" />
+    </LinearLayout>
+    <!-- Another Bottom View For Left to Right -->
+    <LinearLayout
+        android:id="@+id/bottom_wrapper1"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <com.jlouistechnology.magnawave.Fonts.TextView_bld
+            android:id="@+id/txtedit"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:scaleType="fitXY"
+            android:text="Edit"
+            android:visibility="visible" />
+    </LinearLayout>
+    <!-- Top View,  Row itemView of RecyclerView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:elevation="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout android:id="@+id/text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View android:id="@+id/view_top"
+                android:layout_width="2dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="35dp"
+                android:background="@color/light_grey"
+                android:layout_marginBottom="2dp"
+                ></View>
+
+            <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                android:id="@+id/tvcount"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="1"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/circle"
+                android:visibility="visible" />
+
+            <View android:id="@+id/view"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:background="@color/light_grey"
+                android:layout_below="@+id/tvcount"
+                android:layout_marginTop="3dp"
+                ></View>
+
+            <LinearLayout android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvcount"
+                android:orientation="vertical"
+                android:layout_marginTop="-5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                    android:id="@+id/tvtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="left"
+                    android:textAllCaps="true"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/dark_blue"
+                    android:text="DISCONNECT"
+                    />
+
+                    <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+                        android:id="@+id/tv_view_image"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:gravity="right"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/blue"
+                        android:text="View Image"
+                        />
+
+                </LinearLayout>
+                <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+                    android:id="@+id/tv_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:gravity="left"
+                    android:textColor="@color/dark_blue"
+                    android:text="DISCONNECT"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/light_grey1"
+                   ></View>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_zoom_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_gravity="center"
+  >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:src="@mipmap/back"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/txt_menu"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+
+            android:src="@mipmap/heading"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_save"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="11dp"
+
+            android:src="@mipmap/done"
+            android:visibility="visible"
+            android:layout_alignBottom="@+id/txt_menu"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="11dp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:id="@+id/main_container">
+
+    </LinearLayout>
+</LinearLayout>

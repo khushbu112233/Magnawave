@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                        android:id="@+id/txt_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="left"
+                        android:text="BACK"
+                        android:textColor="@color/light_grey"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                        android:id="@+id/txt_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left"
+                        android:layout_marginRight="6dp"
+                        android:gravity="left"
+                        android:text="SAVE"
+                        android:textColor="@color/light_grey"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <FrameLayout
+
+                        android:id="@+id/image_frame_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img_pat"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:scaleType="fitXY"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/image_frame_layout_flip"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_pat_flip"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+
+                            android:src="@mipmap/horse_new" />
+
+                    </FrameLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/light_grey1"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:id="@+id/img_flip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:src="@mipmap/flip" />
+
+                    <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                        android:id="@+id/txt_firstname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:paddingTop="5dp"
+                        android:text="TAP ILLUSTRATION TO ADD NOTE"
+                        android:textColor="@color/light_grey"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/img_camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center|end"
+                        android:layout_margin="10dp"
+                        android:src="@mipmap/camera" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <com.jlouistechnology.magnawave.Fonts.Edittext_bld
+                            android:id="@+id/edt_pat_name"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:hint="Enter Name"
+                            android:maxLines="2"
+                            android:textColor="@color/dark_blue"
+                            android:textColorHint="@color/light_grey"
+                            android:textSize="14sp" />
+
+                        <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+                            android:id="@+id/txt_client_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="left"
+                            android:text="CLIENT NAME"
+                            android:textAllCaps="true"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                        android:id="@+id/txt_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="17dp"
+                        android:text="11 May 2017"
+                        android:textColor="@color/light_grey"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_grey1"></View>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_pat_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>

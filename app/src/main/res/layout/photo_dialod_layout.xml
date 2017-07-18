@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_curve">
+
+        <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+            android:id="@+id/txtfollow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/top_blue_curve"
+            android:text="Choose Option"
+            android:visibility="visible"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/txtfollow1"
+            android:background="#F7F7F7"/>
+
+        <RelativeLayout
+            android:id="@+id/actionbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtfollow1"
+            >
+
+            <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+                android:id="@+id/txtcamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Camera"
+                android:visibility="visible"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view_ling_01"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/txtcamera"
+                android:background="#F7F7F7" />
+
+            <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+                android:id="@+id/txtgallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_below="@+id/view_ling_01"
+                android:text="Gallery"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue"></View>
+
+        <com.jlouistechnology.magnawave.Fonts.TextView_bld
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actionbar2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
+

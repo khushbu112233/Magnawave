@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_curve">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent">
+
+            <ImageView
+                android:id="@+id/txt_menu"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+
+                android:src="@mipmap/heading"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <com.jlouistechnology.magnawave.Fonts.TextView_bld
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@color/colorAccent"
+            android:text="Image"
+            android:visibility="visible"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/txtfollow1"
+            android:background="#F7F7F7"/>
+
+        <RelativeLayout
+            android:id="@+id/actionbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtfollow1"
+            >
+
+          <ImageView android:id="@+id/img_animal_part"
+              android:layout_width="match_parent"
+              android:layout_height="200dp" />
+
+        </RelativeLayout>
+
+        <com.jlouistechnology.magnawave.Fonts.TextView_bld
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actionbar2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@color/colorAccent"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
+

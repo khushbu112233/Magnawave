@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent">
+
+
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:src="@mipmap/menu"
+            android:layout_marginTop="6dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/back"
+            android:layout_marginTop="6dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/txt_menu"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+
+            android:src="@mipmap/heading"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+</layout>

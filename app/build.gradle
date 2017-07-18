@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.jlouistechnology.magnawave"
+        minSdkVersion 15
+        targetSdkVersion 20
+        versionCode 5
+        versionName "1.4"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        config {
+            storeFile file("/home/aipxperts/Dharmesh/MagnaWave/app/keystore.jks")
+            storePassword 'android'
+            keyAlias 'magnawave'
+            keyPassword 'android'
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'org.apache.httpcomponents:httpmime:4.2.3'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/android-zoom-view.jar')
+}

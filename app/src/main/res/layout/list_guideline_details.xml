@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout android:id="@+id/header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:minHeight="30dp">
+
+                <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                    android:id="@+id/tvcount"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/view_top"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                        android:id="@+id/tvtitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1.9"
+                        android:gravity="left|top"
+                        android:singleLine="true"
+                        android:text="DISCONNECTaaaaaaaaaa"
+
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <ImageView android:id="@+id/img_collapse"
+                        android:layout_width="7dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/collapse" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout android:id="@+id/desc_layout"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <View android:id="@+id/ver_view"
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/light_grey"
+                    android:minHeight="30dp"></View>
+
+                <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+                    android:id="@+id/txt_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/view"
+                    android:gravity="left|center_vertical"
+                    android:text="DISCONNECT"
+                    android:minHeight="30dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+

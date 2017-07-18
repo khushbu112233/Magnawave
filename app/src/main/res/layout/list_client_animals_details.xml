@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:orientation="vertical">
+
+    <com.jlouistechnology.magnawave.Fonts.TextView_bld
+        android:id="@+id/tv_time_info"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="13sp"
+        android:gravity="left|center_vertical"
+        android:background="@color/light_grey1"
+        android:padding="15dp"
+        android:textColor="@color/light_grey"
+        android:text="DISCONNECT"
+        />
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/swipe"
+        swipe:drag_edge="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+    <!--Bottom View For Right to Left-->
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <com.jlouistechnology.magnawave.Fonts.TextView_bld
+            android:id="@+id/txtdelete"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="#ffffff"
+            android:scaleType="fitXY"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp">
+
+                    <View android:id="@+id/view_top"
+                        android:layout_width="1dp"
+                        android:layout_height="25dp"
+                        android:background="@color/light_grey"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="18dp"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/view_top"
+                    android:weightSum="2">
+
+                    <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                    android:id="@+id/tvtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="left|top"
+                        android:layout_marginTop="2dp"
+                    android:textAllCaps="true"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/dark_blue"
+                    android:text="DISCONNECT"
+                        android:singleLine="true"
+                    />
+
+                    <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+                        android:id="@+id/tv_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:gravity="right"
+                        android:layout_weight="0.5"
+                        android:textColor="#babbbb"
+                        android:text="time"
+                        />
+
+                </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                        android:id="@+id/tvcount"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/circle"
+                        android:visibility="visible" />
+                    <com.jlouistechnology.magnawave.Fonts.TextView_bld
+                        android:id="@+id/tv_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="left|top"
+                        android:singleLine="true"
+                        android:layout_toRightOf="@+id/tvcount"
+                        android:textColor="@color/dark_blue"
+                        android:text="DISCONNECT"
+                        />
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="@color/light_grey"></View>
+
+                    <com.jlouistechnology.magnawave.Fonts.TextView_Regular
+                        android:id="@+id/tv_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="13sp"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+
+                        android:layout_marginLeft="18dp"
+                        android:layout_toRightOf="@+id/view"
+                        android:textColor="@color/dark_blue"
+                        android:text="DISCONNECT"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="visible"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/tv_details"
+                        android:background="@color/light_grey1"
+                        ></View>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </com.daimajia.swipe.SwipeLayout>
+</LinearLayout>
+
+
